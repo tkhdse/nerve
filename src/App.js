@@ -4,16 +4,49 @@ import Logo from './components/Logo';
 
 function App() {
   return (
-    <div class="">
-      <div class="text-center text-2xl text-black">
-        <Logo />
+    <div class="bg-[#FFFFF2] font-instrument  ">
+      <div class="text-center">
+        <Logo color={"cream"} showText={true} textColor={false}/>
       </div>
 
-      <div class="text-4xl w-[60%] h-[50vh] text-center ml-[20%] mt-[10%]">
+      <div class="text-6xl w-[60%] h-[60vh] text-center ml-[20%] mt-[10%]">
         The Future of Energy-Efficient Computing
       </div>
 
-      <div class="bg-black w-[100%] h-[500px]">
+      <div class="bg-black w-[100%] h-[250px]">
+        <div class="ml-[10%] w-[80%] absolute mt-10 flex justify-between select-none">
+          <div class="">
+            <Logo color={"white"} showText={true} textColor={true}/>
+            <span class="ml-[10px] text-gray-400 ">Champaign, IL</span>
+          </div>
+          
+          <div class="text-white m-2 w-25 mr-[5%] mt-[20px] flex gap-[125px]">
+            <div>
+            <span class="font-bold pb-2">Quick links</span>
+              <ul class="list-disc ml-5 text-gray-400">
+                <li>
+                  <a href="/" target="_blank" class="cursor-pointer hover:text-white transition-colors duration-300">Home</a>
+                </li>
+              </ul>              
+            </div>
+
+            <div>
+              <span class="font-bold pb-2">Contact us</span>
+              <ul class="list-disc ml-5 text-gray-400">
+                <li>
+                  <a href="/" target="_blank" class="cursor-pointer hover:text-white transition-colors duration-300">Email</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/nervetel/about/?viewAsMember=true" target="_blank" rel="noreferrer" class="cursor-pointer hover:text-white transition-colors duration-300">
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
 
       </div>    
 
