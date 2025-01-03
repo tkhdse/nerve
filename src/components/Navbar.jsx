@@ -10,11 +10,11 @@ const Navbar = () => {
             </div>
 
             <div class="mr-[10%] flex space-x-16">
-                <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400" : "text-gray-700 hover:text-blue-400 transition duration-300"}>
+                <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400 border-b-2" : "text-gray-700 hover:text-blue-400 transition duration-300"}>
                     Home
                 </NavLink>
 
-                <NavLink to="/blog" className={({ isActive }) => isActive ? "text-blue-400" : "text-gray-700 hover:text-blue-400 transition duration-300 "}>
+                <NavLink to="/blog" className={({ isActive }) => isActive ? "text-blue-400 border-b-2" : "text-gray-700 hover:text-blue-400 transition duration-300 "}>
                     Blog
                 </NavLink>
 
