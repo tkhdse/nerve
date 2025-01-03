@@ -17,7 +17,7 @@ const Footer = () => {
                     <a href="/" class="cursor-pointer hover:text-white transition-colors duration-300">Home</a>
                   </li>
                   <li>
-                    <a href="/" class="cursor-pointer hover:text-white transition-colors duration-300">Blog</a>
+                    <a href="/blog" class="cursor-pointer hover:text-white transition-colors duration-300">Blog</a>
                   </li>
                 </ul>              
               </div>
