@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react'
 import Logo from './components/Logo';
-import GenerateClouds from './components/Animation';
+import GenerateClouds from './components/Clouds';
 
 
 const useWindowDimensions = () => {
