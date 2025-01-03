@@ -11,7 +11,7 @@ const Home = () => {
         <Navbar />
 
         <GenerateClouds width={width} height={height*0.8} />
-        <div class="text-6xl w-[60%] h-[60vh] text-center ml-[20%] mt-[10%] z-10">
+        <div class="text-2xl md:text-4xl  lg:text-6xl w-[60%] h-[60vh] text-center ml-[20%] mt-[10%] z-10">
           The Future of Energy-Efficient Computing
         </div>
   

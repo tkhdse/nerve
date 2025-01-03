@@ -38,14 +38,14 @@ const GenerateClouds = ({width, height}) => {
     for (let i = 0; i < numClouds; i++) {
         const size = Math.random() * 100 + 50
         const x = Math.random() * (numSection-50) + i*numSection+50;
-        const y1 = Math.random() * (height/2 - 400) + 100;
+        const y1 = Math.random() * (height * 0.05) + 50;
         const y2 = Math.random() * (height * 0.4) + height/2;
         
         clouds.push({size: size, x:x, y1:y1, y2:y2});
     }
 
     return (
-        <div className="absolute w-[100%] h-[80%]">
+        <div className="absolute w-[100%] h-[80%] overflow-x-hidden">
             { clouds.map((cloud, i) => (
                 <Cloud key={i} x={cloud.x} y={i % 2 === 1 ? cloud.y1 : cloud.y2} size={cloud.size}/>
             ))}

@@ -2,17 +2,17 @@ import Logo from "./Logo";
 
 const Footer = () => {
     return (
-        <div class="bg-black w-[100%] h-[250px]">
-          <div class="ml-[10%] w-[80%] absolute mt-10 flex justify-between select-none">
+        <div class="bg-black w-[100%] h-[400px] md:h-[300px] lg:h-[250px]">
+          <div class="ml-[10%] w-[80%] absolute mt-10 flex flex-col md:flex-row justify-between select-none">
             <div class="">
               <Logo color={"white"} showText={true} textColor={true}/>
-              <span class="ml-[10px] text-gray-400 ">Champaign, IL</span>
+              <span class="lg:ml-[10px] text-gray-400 ">Champaign, IL</span>
             </div>
             
-            <div class="text-white m-2 w-25 mr-[5%] mt-[20px] flex gap-[125px]">
+            <div class="text-white m-2 lg:w-25 mr-[5%] mt-[40px] md:mt-[20px] flex flex-col md:flex-row gap-[25px] md:gap-[125px]">
               <div>
               <span class="font-bold pb-2">Quick links</span>
-                <ul class="list-disc ml-5 text-gray-400">
+                <ul class="lg:list-disc lg:ml-5 text-gray-400">
                   <li>
                     <a href="/" class="cursor-pointer hover:text-white transition-colors duration-300">Home</a>
                   </li>
@@ -24,7 +24,7 @@ const Footer = () => {
   
               <div>
                 <span class="font-bold pb-2">Contact us</span>
-                <ul class="list-disc ml-5 text-gray-400">
+                <ul class="lg:list-disc lg:ml-5 text-gray-400">
                   <li>
                     <a href="/" target="_blank" class="cursor-pointer hover:text-white transition-colors duration-300">Email</a>
                   </li>
